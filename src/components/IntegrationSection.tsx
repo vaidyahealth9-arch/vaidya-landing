@@ -75,7 +75,7 @@ export default function IntegrationSection() {
         <div className="bg-gray-50 border border-gray-200 rounded-xl p-8 sm:p-12 md:p-16">
           <div className="text-center mb-12 sm:mb-16">
             <h3 className="text-2xl sm:text-3xl font-medium text-gray-900 mb-6 sm:mb-8">Connected Healthcare Ecosystem</h3>
-            <p className="text-lg sm:text-xl text-gray-600 px-4">How Vaidya LIMS, VaidyaOne, and Doctor app work together seamlessly</p>
+            <p className="text-lg sm:text-xl text-gray-600 px-4">How Vaidya LIMS, VaidyaOne, and VaidyaMD (WIP) work together seamlessly</p>
           </div>
 
           <div className="relative">
@@ -119,7 +119,7 @@ export default function IntegrationSection() {
                     <path d="M12 2a7 7 0 00-7 7v3a5 5 0 002 4v2H5a1 1 0 000 2h14a1 1 0 000-2h-2v-2a5 5 0 002-4V9a7 7 0 00-7-7zm-5 10V9a5 5 0 1110 0v3a3 3 0 01-3 3h-4a3 3 0 01-3-3zm3 5h4v2h-4v-2z"/>
                   </svg>
                 </div>
-                <h4 className="font-medium text-gray-900 mb-3 text-base sm:text-lg">Doctor app (WIP)</h4>
+                <h4 className="font-medium text-gray-900 mb-3 text-base sm:text-lg">VaidyaMD (WIP)</h4>
                 <p className="text-gray-600 text-sm sm:text-base">Clinician workspace for orders, reviews, and follow-ups</p>
               </div>
             </div>

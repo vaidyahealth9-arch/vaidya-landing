@@ -73,7 +73,7 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-gray-200/50">
                 <p className="text-gray-700 font-medium mb-2">Ready to integrate?</p>
-                <p className="text-gray-600 text-sm">Connect your lab, patient, and doctor workflows with Vaidya LIMS, VaidyaOne, and Doctor Web.</p>
+                <p className="text-gray-600 text-sm">Connect your lab, patient, and doctor workflows with Vaidya LIMS, VaidyaOne, and VaidyaMD (WIP).</p>
               </div>
               <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-4 border border-green-200/50">
                 <p className="text-green-800 font-medium mb-2">24/7 Support</p>
