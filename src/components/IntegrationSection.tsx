@@ -6,8 +6,8 @@ export default function IntegrationSection() {
   const integrationFeatures = [
     {
       icon: "🔗",
-      title: "End-to-End Integration",
-      description: "Seamlessly connects diagnostics, clinical workflows, and health records through a unified digital infrastructure."
+      title: "End-to-End AI Integration",
+      description: "Seamlessly connects diagnostics, AI-assisted doctor workflows, and patient health records through a unified digital infrastructure."
     },
     {
       icon: "🏥",
@@ -16,8 +16,8 @@ export default function IntegrationSection() {
     },
     {
       icon: "📊",
-      title: "Smart Health Analytics",
-      description: "AI-enhanced features provide structured insights, support preventive care, and optimize operational decision-making."
+      title: "AI-Powered Health Analytics",
+      description: "AI-enhanced features provide structured biomarker insights, support preventive care, and optimize clinical decision-making."
     },
     {
       icon: "⚡",
@@ -75,7 +75,7 @@ export default function IntegrationSection() {
         <div className="bg-gray-50 border border-gray-200 rounded-xl p-8 sm:p-12 md:p-16">
           <div className="text-center mb-12 sm:mb-16">
             <h3 className="text-2xl sm:text-3xl font-medium text-gray-900 mb-6 sm:mb-8">Connected Healthcare Ecosystem</h3>
-            <p className="text-lg sm:text-xl text-gray-600 px-4">How Vaidya LIMS, VaidyaOne, and VaidyaMD (WIP) work together seamlessly</p>
+            <p className="text-lg sm:text-xl text-gray-600 px-4">How Vaidya LIMS, VaidyaOne, and VaidyaMD work together seamlessly to power the AI clinical data cycle</p>
           </div>
 
           <div className="relative">
@@ -119,8 +119,8 @@ export default function IntegrationSection() {
                     <path d="M12 2a7 7 0 00-7 7v3a5 5 0 002 4v2H5a1 1 0 000 2h14a1 1 0 000-2h-2v-2a5 5 0 002-4V9a7 7 0 00-7-7zm-5 10V9a5 5 0 1110 0v3a3 3 0 01-3 3h-4a3 3 0 01-3-3zm3 5h4v2h-4v-2z"/>
                   </svg>
                 </div>
-                <h4 className="font-medium text-gray-900 mb-3 text-base sm:text-lg">VaidyaMD (WIP)</h4>
-                <p className="text-gray-600 text-sm sm:text-base">Clinician workspace for orders, reviews, and follow-ups</p>
+                <h4 className="font-medium text-gray-900 mb-3 text-base sm:text-lg">VaidyaMD</h4>
+                <p className="text-gray-600 text-sm sm:text-base">Clinician workspace with AI clinical copilot, automated screenings, and follow-ups</p>
               </div>
             </div>
           </div>
@@ -129,22 +129,22 @@ export default function IntegrationSection() {
             <div className="flex items-start space-x-4">
               <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-blue-500 rounded-full mt-3 shadow-sm"></div>
               <div>
-                <h5 className="font-medium text-gray-900 mb-2 text-lg">Real-time Data Sync</h5>
-                <p className="text-gray-600 leading-relaxed">Automatic synchronization between lab results, patient records, and clinician workflows</p>
+                <h5 className="font-medium text-gray-900 mb-2 text-lg">Real-time AI Data Cycle</h5>
+                <p className="text-gray-600 leading-relaxed">Automatic synchronization and machine learning interpretation between lab results, patient records, and clinician workflows</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-blue-500 rounded-full mt-3 shadow-sm"></div>
               <div>
                 <h5 className="font-medium text-gray-900 mb-2 text-lg">Secure Exchange</h5>
-                <p className="text-gray-600 leading-relaxed">End-to-end encrypted data transfer with privacy-first workflows</p>
+                <p className="text-gray-600 leading-relaxed">End-to-end encrypted data transfer with HIPAA-compliant secure sharing permissions</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-blue-500 rounded-full mt-3 shadow-sm"></div>
               <div>
-                <h5 className="font-medium text-gray-900 mb-2 text-lg">Unified Experience</h5>
-                <p className="text-gray-600 leading-relaxed">Seamless user experience across all platforms</p>
+                <h5 className="font-medium text-gray-900 mb-2 text-lg">AI-Enabled Unified Experience</h5>
+                <p className="text-gray-600 leading-relaxed">Seamless user experience across all platforms, enhanced by conversational AI summaries and doctor copilot notes</p>
               </div>
             </div>
           </div>

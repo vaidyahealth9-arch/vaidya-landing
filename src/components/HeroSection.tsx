@@ -13,7 +13,7 @@ export default function HeroSection() {
                          <span className="text-green-600 block">for a Connected Tomorrow</span>
                        </h1>
                       <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-600 mb-8 sm:mb-12 max-w-4xl sm:max-w-5xl mx-auto leading-relaxed animate-fade-in-delay px-4">
-                        Enable streamlined, interoperable care through secure data exchange and unified digital workflows
+                        Enable streamlined, AI-assisted care through secure data exchange and unified digital workflows
                       </p>
                        
                        {/* Get Started Button */}
@@ -131,16 +131,16 @@ export default function HeroSection() {
                  <div className="flex items-start space-x-4">
                    <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-blue-500 rounded-full mt-3 flex-shrink-0 shadow-sm"></div>
                    <div>
-                     <h3 className="font-medium text-gray-900 mb-2 text-lg">Clinical Intelligence</h3>
-                     <p className="text-gray-600 leading-relaxed text-sm">Clinical data extraction and interpretation via advanced algorithms</p>
+                     <h3 className="font-medium text-gray-900 mb-2 text-lg">AI Clinical Intelligence</h3>
+                     <p className="text-gray-600 leading-relaxed text-sm">Automated diagnostic data extraction and biomarker analysis via advanced machine learning models</p>
                    </div>
                  </div>
                  
                  <div className="flex items-start space-x-4">
                    <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-blue-500 rounded-full mt-3 flex-shrink-0 shadow-sm"></div>
                    <div>
-                     <h3 className="font-medium text-gray-900 mb-2 text-lg">Secure Automated Reports</h3>
-                     <p className="text-gray-600 leading-relaxed text-sm">Fast & compliant report generation with end-to-end data security</p>
+                     <h3 className="font-medium text-gray-900 mb-2 text-lg">AI-Assisted Secure Reports</h3>
+                     <p className="text-gray-600 leading-relaxed text-sm">Fast & compliant report generation with secure, patient-friendly conversational summaries</p>
                    </div>
                  </div>
                  
@@ -158,8 +158,8 @@ export default function HeroSection() {
                  <div className="flex items-start space-x-4">
                    <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-blue-500 rounded-full mt-3 flex-shrink-0 shadow-sm"></div>
                    <div>
-                     <h3 className="font-medium text-gray-900 mb-2 text-lg">360° Health Dashboard</h3>
-                     <p className="text-gray-600 leading-relaxed text-sm">Unified dashboard delivering comprehensive insights across the ecosystem</p>
+                     <h3 className="font-medium text-gray-900 mb-2 text-lg">360° AI Health Dashboard</h3>
+                     <p className="text-gray-600 leading-relaxed text-sm">Unified dashboard delivering comprehensive AI-powered longitudinal insights across the ecosystem</p>
                    </div>
                  </div>
                  
@@ -167,7 +167,7 @@ export default function HeroSection() {
                    <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-blue-500 rounded-full mt-3 flex-shrink-0 shadow-sm"></div>
                    <div>
                      <h3 className="font-medium text-gray-900 mb-2 text-lg">Real-time Data Sync</h3>
-                     <p className="text-gray-600 leading-relaxed text-sm">Automatic synchronization between lab results and patient records</p>
+                     <p className="text-gray-600 leading-relaxed text-sm">Automatic synchronization between lab results, AI engines, and patient records</p>
                    </div>
                  </div>
                  
