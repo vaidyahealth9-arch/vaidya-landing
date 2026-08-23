@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  PROJECT_ID: vaidya-phr-dev
+  PROJECT_ID: vaidya-health
   REGION: asia-south1
   SERVICE: vaidya-landing
   REPO: vaidya-apps
