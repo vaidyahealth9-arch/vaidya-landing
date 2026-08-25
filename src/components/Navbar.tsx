@@ -33,26 +33,40 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Navigation Links - Centered */}
-        <div className="hidden md:flex items-center space-x-8 lg:space-x-10 absolute left-1/2 transform -translate-x-1/2">
+        <div className="hidden md:flex items-center space-x-6 lg:space-x-8 absolute left-1/2 transform -translate-x-1/2">
+          <Link
+            href="#platform"
+            className="group relative px-3 py-2 text-gray-600 hover:text-gray-900 transition-all duration-200 font-medium text-sm lg:text-base rounded-lg"
+          >
+            <span className="relative z-10">Platform</span>
+            <div className="absolute inset-0 bg-gray-100 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-200 scale-95 group-hover:scale-100"></div>
+          </Link>
+          <Link
+            href="#ai-capabilities"
+            className="group relative px-3 py-2 text-gray-600 hover:text-gray-900 transition-all duration-200 font-medium text-sm lg:text-base rounded-lg"
+          >
+            <span className="relative z-10">AI</span>
+            <div className="absolute inset-0 bg-gray-100 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-200 scale-95 group-hover:scale-100"></div>
+          </Link>
           <Link
             href="#products"
-            className="group relative px-4 py-2 text-gray-600 hover:text-gray-900 transition-all duration-200 font-medium text-sm lg:text-base rounded-lg"
+            className="group relative px-3 py-2 text-gray-600 hover:text-gray-900 transition-all duration-200 font-medium text-sm lg:text-base rounded-lg"
           >
-            <span className="relative z-10">What We Do</span>
+            <span className="relative z-10">Products</span>
             <div className="absolute inset-0 bg-gray-100 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-200 scale-95 group-hover:scale-100"></div>
           </Link>
           <Link
-            href="#integration"
-            className="group relative px-4 py-2 text-gray-600 hover:text-gray-900 transition-all duration-200 font-medium text-sm lg:text-base rounded-lg"
+            href="#interoperability"
+            className="group relative px-3 py-2 text-gray-600 hover:text-gray-900 transition-all duration-200 font-medium text-sm lg:text-base rounded-lg"
           >
-            <span className="relative z-10">How We Do</span>
+            <span className="relative z-10">Interoperability</span>
             <div className="absolute inset-0 bg-gray-100 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-200 scale-95 group-hover:scale-100"></div>
           </Link>
           <Link
-            href="#why-choose-us"
-            className="group relative px-4 py-2 text-gray-600 hover:text-gray-900 transition-all duration-200 font-medium text-sm lg:text-base rounded-lg"
+            href="#about"
+            className="group relative px-3 py-2 text-gray-600 hover:text-gray-900 transition-all duration-200 font-medium text-sm lg:text-base rounded-lg"
           >
-            <span className="relative z-10">Why Choose Us</span>
+            <span className="relative z-10">About</span>
             <div className="absolute inset-0 bg-gray-100 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-200 scale-95 group-hover:scale-100"></div>
           </Link>
         </div>
@@ -63,7 +77,7 @@ export default function Navbar() {
             href="#book"
             className="px-5 py-2.5 border border-gray-300 text-gray-700 rounded-lg font-medium text-sm lg:text-base transition-all duration-200 hover:border-green-400 hover:text-green-600 hover:bg-green-50"
           >
-            Get Started
+            Book a Demo
           </Link>
         </div>
 
@@ -103,27 +117,43 @@ export default function Navbar() {
         <div className="md:hidden mt-4 pt-4 border-t border-gray-200/60">
           <div className="flex flex-col space-y-4">
             <Link
+              href="#platform"
+              className="group relative px-4 py-2 text-gray-600 hover:text-gray-900 transition-all duration-200 font-medium text-base rounded-lg"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <span className="relative z-10">Platform</span>
+              <div className="absolute inset-0 bg-gray-100 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-200 scale-95 group-hover:scale-100"></div>
+            </Link>
+            <Link
+              href="#ai-capabilities"
+              className="group relative px-4 py-2 text-gray-600 hover:text-gray-900 transition-all duration-200 font-medium text-base rounded-lg"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <span className="relative z-10">AI</span>
+              <div className="absolute inset-0 bg-gray-100 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-200 scale-95 group-hover:scale-100"></div>
+            </Link>
+            <Link
               href="#products"
               className="group relative px-4 py-2 text-gray-600 hover:text-gray-900 transition-all duration-200 font-medium text-base rounded-lg"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <span className="relative z-10">What We Do</span>
+              <span className="relative z-10">Products</span>
               <div className="absolute inset-0 bg-gray-100 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-200 scale-95 group-hover:scale-100"></div>
             </Link>
             <Link
-              href="#integration"
+              href="#interoperability"
               className="group relative px-4 py-2 text-gray-600 hover:text-gray-900 transition-all duration-200 font-medium text-base rounded-lg"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <span className="relative z-10">How We Do</span>
+              <span className="relative z-10">Interoperability</span>
               <div className="absolute inset-0 bg-gray-100 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-200 scale-95 group-hover:scale-100"></div>
             </Link>
             <Link
-              href="#why-choose-us"
+              href="#about"
               className="group relative px-4 py-2 text-gray-600 hover:text-gray-900 transition-all duration-200 font-medium text-base rounded-lg"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <span className="relative z-10">Why Choose Us</span>
+              <span className="relative z-10">About</span>
               <div className="absolute inset-0 bg-gray-100 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-200 scale-95 group-hover:scale-100"></div>
             </Link>
             <div className="pt-2">
@@ -132,7 +162,7 @@ export default function Navbar() {
                 className="block w-full text-center px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium text-base transition-all duration-200 hover:border-green-400 hover:text-green-600 hover:bg-green-50"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Get Started
+                Book a Demo
               </Link>
             </div>
           </div>

@@ -3,217 +3,182 @@
 import Image from 'next/image'
 
 export default function ProductsSection() {
-     return (
-     <section id="products" className="py-24 sm:py-32 md:py-40 bg-white">
-       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                  {/* Vaidya LIMS Section - Minimal Design */}
-         <div className="mb-24 sm:mb-32 md:mb-48">
-           <div className="text-center mb-12 sm:mb-16 md:mb-20">
-             <div className="inline-flex items-center px-6 sm:px-8 md:px-10 py-3 sm:py-4 mb-6 sm:mb-8 bg-white/90 backdrop-blur-xl border border-gray-200/60 rounded-2xl shadow-lg shadow-gray-200/50">
-               <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-blue-500 rounded-full mr-3 sm:mr-4"></div>
-               <h2 className="text-lg sm:text-xl font-medium text-gray-800">
-                 Transforming Diagnostics for the Digital Health Era
-               </h2>
-             </div>
-                           <h3 className="text-2xl sm:text-3xl font-medium text-green-600 mb-3 sm:mb-4">Vaidya LIMS - Digital Lab Reports Platform</h3>
-             <p className="text-lg sm:text-xl text-gray-600 mb-12 sm:mb-16 leading-relaxed max-w-3xl mx-auto px-4">
-               A comprehensive lab management platform that streamlines diagnostics, enhances efficiency, and enables connected care
-             </p>
+  const products = [
+    {
+      id: "lims",
+      badge: "Diagnostics",
+      title: "Vaidya LIMS",
+      subtitle: "AI-native operating system for diagnostic laboratories",
+      desc: "Replaces traditional static reports with a dynamic clinical system. Equips labs with automated biomarker extraction, instant pathology warnings, and longitudinal trend lines.",
+      features: [
+        {
+          name: "AI-Assisted Automated Reporting",
+          detail: "Automatically parses lab values, maps reference intervals, and drafts initial diagnostic summaries for pathologist review."
+        },
+        {
+          name: "Longitudinal Trend Mapping",
+          detail: "Connects current readings with historical records to construct longitudinal biomarker lines and track health shifts."
+        },
+        {
+          name: "Hyper-Acute Abnormality Alerts",
+          detail: "Identifies life-critical values instantly, triggering automated alerts to clinicians for immediate critical care."
+        }
+      ],
+      iconBg: "bg-emerald-50",
+      accentColor: "border-green-300 hover:border-green-500",
+      textColor: "text-green-700 bg-green-50/50"
+    },
+    {
+      id: "vaidyaone",
+      badge: "Patient Portal",
+      title: "VaidyaOne",
+      subtitle: "Your lifelong AI health companion",
+      desc: "Moves beyond simple health storage. Actively interprets and translates dense medical charts into conversational, patient-friendly insights for active wellness guidance.",
+      features: [
+        {
+          name: "Conversational Report Translation",
+          detail: "Converts complex clinical reports and chemical listings into simple, plain-language summaries anyone can understand."
+        },
+        {
+          name: "Longitudinal Biomarker Insights",
+          detail: "Visualizes and explains physiological trends over years, helping patients trace patterns in cholesterol, blood sugar, or thyroid levels."
+        },
+        {
+          name: "Preventative Milestones & Alerts",
+          detail: "Suggests age-appropriate screenings, pediatric milestones, and immunizations based on historical health data."
+        }
+      ],
+      iconBg: "bg-blue-50",
+      accentColor: "border-blue-300 hover:border-blue-500",
+      textColor: "text-blue-700 bg-blue-50/50"
+    },
+    {
+      id: "vaidyamd",
+      badge: "Clinicians",
+      title: "VaidyaMD",
+      subtitle: "AI-powered clinical workspace",
+      isWip: true,
+      desc: "Intelligent medical workspace providing clinicians with consultation copilots, automated note generation, and context-aware clinical decision checklists.",
+      features: [
+        {
+          name: "Consultation Audio Copilot",
+          detail: "Listens to patient-clinician conversations to auto-draft structured SOAP notes and treatment proposals."
+        },
+        {
+          name: "Interactive Patient Overviews",
+          detail: "Extracts primary complaints, medication lists, and critical lab histories to present a unified patient summary."
+        },
+        {
+          name: "AI-Native Screening Checklists",
+          detail: "Recommends evidence-based preventative screenings and immunization checks in real time based on active charts."
+        }
+      ],
+      iconBg: "bg-indigo-50",
+      accentColor: "border-indigo-300 hover:border-indigo-500",
+      textColor: "text-indigo-700 bg-indigo-50/50"
+    }
+  ]
+
+  return (
+    <section id="products" className="py-24 sm:py-32 bg-white relative scroll-mt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Header */}
+        <div className="text-center max-w-3xl mx-auto mb-20">
+          <div className="inline-flex items-center px-4 py-1.5 mb-4 bg-green-50 border border-green-200/50 rounded-full">
+            <span className="text-xs font-semibold text-green-700 tracking-wider uppercase">Application Layer</span>
           </div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight mb-4">
+            Built on Vaidya Intelligence
+          </h2>
+          <p className="text-gray-600">
+            Our platform supports specialized applications that leverage the central intelligence layer to power diagnostics, patient companion loops, and clinician workflows.
+          </p>
+        </div>
 
-                       {/* Product Preview Cards */}
-                        <div className="flex flex-col sm:flex-row justify-center space-y-6 sm:space-y-0 sm:space-x-6 md:space-x-8 mb-16 sm:mb-24 px-4">
-                                      <div className="w-full sm:w-80 md:w-96 h-48 sm:h-56 border-2 border-gray-300 rounded-xl bg-white flex items-center justify-center hover:border-green-300 hover:scale-105 transition-all duration-300 shadow-sm hover:shadow-lg">
-                           <div className="text-center px-4">
-                             <div className="w-20 h-20 sm:w-28 sm:h-28 bg-blue-50/80 rounded-xl flex items-center justify-center mb-3 sm:mb-4 mx-auto backdrop-blur-sm hover:scale-110 transition-transform duration-300">
-                               <Image src="/logo.png" alt="Vaidya LIMS" width={80} height={80} className="w-16 h-16 sm:w-20 sm:h-20" />
-                             </div>
-                             <span className="text-gray-700 font-medium text-base sm:text-lg">Vaidya LIMS - Digital Lab Reports Platform</span>
-                             <p className="text-gray-500 text-xs sm:text-sm mt-2">Streamlined diagnostics and automated reporting</p>
-                           </div>
-                         </div>
-                         <div className="w-full sm:w-80 md:w-96 h-48 sm:h-56 border-2 border-gray-300 rounded-xl bg-white flex items-center justify-center hover:border-green-300 hover:scale-105 transition-all duration-300 shadow-sm hover:shadow-lg">
-                           <div className="text-center px-4">
-                             <div className="w-20 h-20 sm:w-28 sm:h-28 bg-green-50/80 rounded-xl flex items-center justify-center mb-3 sm:mb-4 mx-auto backdrop-blur-sm hover:scale-110 transition-transform duration-300">
-                               <Image src="/logo.png" alt="VaidyaOne" width={80} height={80} className="w-16 h-16 sm:w-20 sm:h-20" />
-                             </div>
-                             <span className="text-gray-700 font-medium text-base sm:text-lg">VaidyaOne - Unified Health Record Platform</span>
-                             <p className="text-gray-500 text-xs sm:text-sm mt-2">Centralized patient health data management</p>
-                           </div>
-                         </div>
-                         <div className="w-full sm:w-80 md:w-96 h-48 sm:h-56 border-2 border-gray-300 rounded-xl bg-white flex items-center justify-center hover:border-indigo-300 hover:scale-105 transition-all duration-300 shadow-sm hover:shadow-lg">
-                           <div className="text-center px-4">
-                             <div className="w-20 h-20 sm:w-28 sm:h-28 bg-indigo-50/80 rounded-xl flex items-center justify-center mb-3 sm:mb-4 mx-auto backdrop-blur-sm hover:scale-110 transition-transform duration-300">
-                               <svg className="w-12 h-12 text-indigo-600 sm:w-16 sm:h-16 mx-auto" fill="currentColor" viewBox="0 0 24 24">
-                                 <path d="M12 2a7 7 0 00-7 7v3a5 5 0 002 4v2H5a1 1 0 000 2h14a1 1 0 000-2h-2v-2a5 5 0 002-4V9a7 7 0 00-7-7zm-5 10V9a5 5 0 1110 0v3a3 3 0 01-3 3h-4a3 3 0 01-3-3zm3 5h4v2h-4v-2z"/>
-                               </svg>
-                             </div>
-                             <span className="text-gray-700 font-medium text-base sm:text-lg">VaidyaMD - Clinician AI Workspace</span>
-                             <p className="text-gray-500 text-xs sm:text-sm mt-2">AI clinical copilot and smart screening checklists</p>
-                           </div>
-                         </div>
+        {/* Product Cards Stack */}
+        <div className="space-y-24">
+          {products.map((product, idx) => (
+            <div 
+              key={product.id}
+              className={`flex flex-col lg:flex-row gap-12 lg:gap-16 items-start ${
+                idx % 2 === 1 ? "lg:flex-row-reverse" : ""
+              }`}
+            >
+              {/* Product Intro */}
+              <div className="w-full lg:w-5/12 space-y-6">
+                <div className="flex items-center space-x-3">
+                  <span className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider ${product.textColor}`}>
+                    {product.badge}
+                  </span>
+                  
+                  {product.isWip && (
+                    <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-orange-100 text-orange-800 border border-orange-200 animate-pulse">
+                      Work In Progress (WIP)
+                    </span>
+                  )}
+                </div>
+
+                <div>
+                  <h3 className="text-3xl font-bold text-gray-900 mb-2">{product.title}</h3>
+                  <div className="text-lg font-semibold text-green-700 leading-snug">
+                    {product.subtitle}
+                  </div>
+                </div>
+
+                <p className="text-gray-600 leading-relaxed text-base">
+                  {product.desc}
+                </p>
+
+                {/* Simulated Product Card Illustration */}
+                <div className={`border border-gray-200 rounded-2xl p-6 ${product.iconBg} relative overflow-hidden shadow-sm`}>
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm">
+                      {product.id === 'vaidyamd' ? (
+                        <svg className="w-7.5 h-7.5 text-indigo-600" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2a7 7 0 00-7 7v3a5 5 0 002 4v2H5a1 1 0 000 2h14a1 1 0 000-2h-2v-2a5 5 0 002-4V9a7 7 0 00-7-7zm-5 10V9a5 5 0 1110 0v3a3 3 0 01-3 3h-4a3 3 0 01-3-3zm3 5h4v2h-4v-2z"/>
+                        </svg>
+                      ) : (
+                        <Image src="/logo.png" alt={product.title} width={36} height={36} />
+                      )}
+                    </div>
+                    <div>
+                      <div className="font-bold text-gray-900 text-sm">{product.title}</div>
+                      <div className="text-xs text-gray-400">Powered by Vaidya Intelligence</div>
+                    </div>
+                  </div>
+                  <div className="w-full h-2 bg-white rounded-full overflow-hidden">
+                    <div className="w-3/4 h-full bg-green-500 rounded-full"></div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Product Detailed Features */}
+              <div className="w-full lg:w-7/12 space-y-6">
+                <h4 className="text-xs font-bold text-gray-400 uppercase tracking-widest">Core Capabilities</h4>
+                
+                <div className="space-y-4">
+                  {product.features.map((feature, fIdx) => (
+                    <div 
+                      key={fIdx} 
+                      className="p-5 bg-gray-50 border border-gray-200/60 rounded-xl hover:bg-white hover:border-green-400 hover:shadow-md transition-all duration-300"
+                    >
+                      <h5 className="font-bold text-gray-900 mb-1.5 text-base flex items-center">
+                        <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-2.5"></span>
+                        {feature.name}
+                      </h5>
+                      <p className="text-xs sm:text-sm text-gray-600 leading-relaxed pl-4">
+                        {feature.detail}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
+          ))}
+        </div>
 
-                                {/* Subtle Side-by-Side Features Layout */}
-           <div className="max-w-7xl mx-auto mb-24">
-             <div className="grid grid-cols-1 xl:grid-cols-2 gap-16">
-               {/* Left Column - Vaidya LIMS Features */}
-               <div className="relative">
-                 <div className="sticky top-8">
-                   <div className="bg-white rounded-2xl p-8 border border-gray-200">
-                                                     <div className="flex items-center mb-8">
-                                  <div className="w-24 h-24 bg-green-50/80 rounded-xl flex items-center justify-center mr-6 backdrop-blur-sm">
-                                    <Image src="/logo.png" alt="Vaidya LIMS" width={64} height={64} />
-                                  </div>
-                                  <div>
-                                    <h3 className="text-xl font-medium text-gray-900">Vaidya LIMS - Digital Lab Reports Platform</h3>
-                                    <p className="text-green-600 text-sm">Streamlined diagnostics and automated reporting</p>
-                                  </div>
-                                </div>
-                     
-                     <div className="space-y-6">
-                       <div className="flex items-start space-x-4 p-4 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-200 transition-colors">
-                         <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                           <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                             <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd"/>
-                           </svg>
-                         </div>
-                         <div>
-                            <h4 className="font-medium text-gray-900 mb-2 text-sm">Secure, Compliant Report Generation</h4>
-                            <p className="text-gray-600 text-xs leading-relaxed">Create structured, high-quality reports and billing documents in seconds with AI measurement parsing, dietary/lifestyle suggestions, and built-in end-to-end encryption.</p>
-                          </div>
-                       </div>
-                       
-                       <div className="flex items-start space-x-4 p-4 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-200 transition-colors">
-                         <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                           <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                             <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"/>
-                           </svg>
-                         </div>
-                         <div>
-                           <h4 className="font-medium text-gray-900 mb-2 text-sm">Complete Workflow Management</h4>
-                           <p className="text-gray-600 text-xs leading-relaxed">From patient registration to final report delivery, manage every step with precision. Automate key tasks, track marker values with AI, reduce manual errors, and ensure a smoother diagnostic journey.</p>
-                         </div>
-                       </div>
-                       
-                       <div className="flex items-start space-x-4 p-4 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-200 transition-colors">
-                         <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                           <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                             <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
-                           </svg>
-                         </div>
-                         <div>
-                           <h4 className="font-medium text-gray-900 mb-2 text-sm">Interoperable Health Record Integration</h4>
-                           <p className="text-gray-600 text-xs leading-relaxed">Connect effortlessly with VaidyaOne and doctor workflows to eliminate silos, sync AI diagnostic recommendations, and enable real-time, secure data exchange.</p>
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-               
-               {/* Right Column - VaidyaOne Features */}
-               <div className="relative">
-                 <div className="sticky top-8">
-                   <div className="bg-white rounded-2xl p-8 border border-gray-200">
-                                                     <div className="flex items-center mb-8">
-                                  <div className="w-24 h-24 bg-blue-50/80 rounded-xl flex items-center justify-center mr-6 backdrop-blur-sm">
-                                    <Image src="/logo.png" alt="VaidyaOne" width={64} height={64} />
-                                  </div>
-                                  <div>
-                                    <h3 className="text-xl font-medium text-gray-900">VaidyaOne - Unified Health Record Platform</h3>
-                                    <p className="text-blue-600 text-sm">Centralized patient health data management</p>
-                                  </div>
-                                </div>
-                     
-                     <div className="space-y-6">
-                       <div className="flex items-start space-x-4 p-4 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-200 transition-colors">
-                         <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                           <svg className="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                             <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clipRule="evenodd"/>
-                           </svg>
-                         </div>
-                         <div>
-                           <h4 className="font-medium text-gray-900 mb-2 text-sm">Patient-Owned Digital Health Vault</h4>
-                           <p className="text-gray-600 text-xs leading-relaxed">Secure, lifelong repository for all health records including lab reports, prescriptions, and imaging, with automatic AI report translation accessible anytime, anywhere.</p>
-                         </div>
-                       </div>
-                       
-                       <div className="flex items-start space-x-4 p-4 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-200 transition-colors">
-                         <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                           <svg className="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                             <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"/>
-                           </svg>
-                         </div>
-                         <div>
-                           <h4 className="font-medium text-gray-900 mb-2 text-sm">AI-Powered Health Summaries</h4>
-                           <p className="text-gray-600 text-xs leading-relaxed">Automatically generates simplified, structured summaries of medical history, conditions, and test results for better understanding and continuity of care.</p>
-                         </div>
-                       </div>
-                       
-                       <div className="flex items-start space-x-4 p-4 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-200 transition-colors">
-                         <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                           <svg className="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                             <path fillRule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                           </svg>
-                         </div>
-                         <div>
-                           <h4 className="font-medium text-gray-900 mb-2 text-sm">Health Trend Analytics</h4>
-                           <p className="text-gray-600 text-xs leading-relaxed">Visualize longitudinal trends in vitals, lab values, and chronic conditions with AI-driven pattern detection and alerts.</p>
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-
-              {/* Centered VaidyaMD Workspace Block */}
-              <div className="mt-16 max-w-4xl mx-auto bg-white rounded-2xl p-8 border border-gray-200">
-                 <div className="flex flex-col sm:flex-row items-center justify-center text-center sm:text-left mb-8">
-                   <div className="w-24 h-24 bg-indigo-50/80 rounded-xl flex items-center justify-center sm:mr-6 mb-4 sm:mb-0 backdrop-blur-sm flex-shrink-0">
-                     <svg className="w-16 h-16 text-indigo-600" fill="currentColor" viewBox="0 0 24 24">
-                       <path d="M12 2a7 7 0 00-7 7v3a5 5 0 002 4v2H5a1 1 0 000 2h14a1 1 0 000-2h-2v-2a5 5 0 002-4V9a7 7 0 00-7-7zm-5 10V9a5 5 0 1110 0v3a3 3 0 01-3 3h-4a3 3 0 01-3-3zm3 5h4v2h-4v-2z"/>
-                     </svg>
-                   </div>
-                   <div>
-                     <h3 className="text-xl font-medium text-gray-900">VaidyaMD - Doctor App with AI Assistance</h3>
-                     <p className="text-indigo-600 text-sm">Intelligent clinician workspace with decision support</p>
-                   </div>
-                 </div>
-                 
-                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-                   <div className="flex items-start space-x-4 p-4 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-200 transition-colors">
-                     <div className="w-8 h-8 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                       <svg className="w-4 h-4 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
-                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd"/>
-                       </svg>
-                     </div>
-                     <div>
-                       <h4 className="font-medium text-gray-900 mb-2 text-sm">Clinician AI Assist & Copilot</h4>
-                       <p className="text-gray-600 text-xs leading-relaxed">Auto-draft consultation notes, summarize complex patient records, and translate clinical reports in real time.</p>
-                     </div>
-                   </div>
-                   
-                   <div className="flex items-start space-x-4 p-4 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-200 transition-colors">
-                     <div className="w-8 h-8 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                       <svg className="w-4 h-4 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
-                         <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
-                         <path fillRule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3z" clipRule="evenodd" />
-                       </svg>
-                     </div>
-                     <div>
-                       <h4 className="font-medium text-gray-900 mb-2 text-sm">AI Screening Suggestions</h4>
-                       <p className="text-gray-600 text-xs leading-relaxed">Proactive age-appropriate diagnostic guidelines, immunization timelines, and preventative screenings based on family health profiles.</p>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-           </div>
-
-
-                     </div>
-       </div>
-     </section>
+      </div>
+    </section>
   )
-} 
+}

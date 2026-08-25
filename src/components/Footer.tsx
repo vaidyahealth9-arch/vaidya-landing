@@ -43,24 +43,35 @@ export default function Footer() {
           <div className="relative">
             <div className="absolute -top-2 -left-2 w-8 h-8 bg-green-100 rounded-full opacity-60"></div>
             <h4 className="text-xl font-medium text-gray-900 mb-6 relative z-10">Quick Links</h4>
-            <ul className="space-y-4">
+            <ul className="space-y-3">
+              <li>
+                <Link href="#platform" className="text-gray-600 hover:text-green-600 transition-all duration-300 font-medium group flex items-center">
+                  <span className="w-1.5 h-1.5 bg-green-400 rounded-full mr-2.5 group-hover:scale-150 transition-transform"></span>
+                  Platform
+                </Link>
+              </li>
+              <li>
+                <Link href="#ai-capabilities" className="text-gray-600 hover:text-green-600 transition-all duration-300 font-medium group flex items-center">
+                  <span className="w-1.5 h-1.5 bg-green-400 rounded-full mr-2.5 group-hover:scale-150 transition-transform"></span>
+                  AI Capabilities
+                </Link>
+              </li>
               <li>
                 <Link href="#products" className="text-gray-600 hover:text-green-600 transition-all duration-300 font-medium group flex items-center">
-                  <span className="w-1 h-1 bg-green-400 rounded-full mr-3 group-hover:scale-150 transition-transform"></span>
-                  What We Do
+                  <span className="w-1.5 h-1.5 bg-green-400 rounded-full mr-2.5 group-hover:scale-150 transition-transform"></span>
+                  Products
                 </Link>
               </li>
               <li>
-                <Link href="#integration" className="text-gray-600 hover:text-green-600 transition-all duration-300 font-medium group flex items-center">
-                  <span className="w-1 h-1 bg-green-400 rounded-full mr-3 group-hover:scale-150 transition-transform"></span>
-                  How We Do
+                <Link href="#interoperability" className="text-gray-600 hover:text-green-600 transition-all duration-300 font-medium group flex items-center">
+                  <span className="w-1.5 h-1.5 bg-green-400 rounded-full mr-2.5 group-hover:scale-150 transition-transform"></span>
+                  Interoperability
                 </Link>
               </li>
-
               <li>
-                <Link href="#book" className="text-gray-600 hover:text-green-600 transition-all duration-300 font-medium group flex items-center">
-                  <span className="w-1 h-1 bg-green-400 rounded-full mr-3 group-hover:scale-150 transition-transform"></span>
-                  Get Started
+                <Link href="#about" className="text-gray-600 hover:text-green-600 transition-all duration-300 font-medium group flex items-center">
+                  <span className="w-1.5 h-1.5 bg-green-400 rounded-full mr-2.5 group-hover:scale-150 transition-transform"></span>
+                  About & Trust
                 </Link>
               </li>
             </ul>
@@ -73,11 +84,11 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-gray-200/50">
                 <p className="text-gray-700 font-medium mb-2">Ready to integrate?</p>
-                <p className="text-gray-600 text-sm">Connect your lab, patient, and doctor workflows with Vaidya LIMS, VaidyaOne, and VaidyaMD (WIP).</p>
+                <p className="text-gray-600 text-sm">Deploy the intelligence layer across your labs, patient networks, and provider clinical workspaces.</p>
               </div>
               <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-4 border border-green-200/50">
-                <p className="text-green-800 font-medium mb-2">24/7 Support</p>
-                <p className="text-green-700 text-sm">We&apos;re here to help you every step of the way.</p>
+                <p className="text-green-800 font-medium mb-2">24/7 Integration Support</p>
+                <p className="text-green-700 text-sm">Our technical team supports legacy migration, HL7 compliance, and custom REST connections.</p>
               </div>
             </div>
           </div>
