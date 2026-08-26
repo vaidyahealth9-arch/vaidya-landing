@@ -75,16 +75,16 @@ export default function IntegrationSection() {
         <div className="bg-gray-50 border border-gray-200 rounded-xl p-8 sm:p-12 md:p-16">
           <div className="text-center mb-12 sm:mb-16">
             <h3 className="text-2xl sm:text-3xl font-medium text-gray-900 mb-6 sm:mb-8">Connected Healthcare Ecosystem</h3>
-            <p className="text-lg sm:text-xl text-gray-600 px-4">How Vaidya LIMS, VaidyaOne, and VaidyaMD work together seamlessly to power the AI clinical data cycle</p>
+            <p className="text-lg sm:text-xl text-gray-600 px-4">How VaidyaLab, VaidyaOne, and VaidyaMD work together seamlessly to power the AI clinical data cycle</p>
           </div>
 
           <div className="relative">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8 sm:gap-10 items-start relative z-20">
               <div className="md:col-span-2 bg-white border border-gray-200 rounded-xl p-6 sm:p-8 text-center relative">
                 <div className="w-24 h-24 sm:w-32 sm:h-32 bg-blue-50/80 rounded-xl flex items-center justify-center mb-4 sm:mb-6 mx-auto backdrop-blur-sm">
-                  <Image src="/logo.png" alt="Vaidya LIMS" width={80} height={80} className="w-16 h-16 sm:w-20 sm:h-20 object-contain" />
+                  <Image src="/logo.png" alt="VaidyaLab" width={80} height={80} className="w-16 h-16 sm:w-20 sm:h-20 object-contain" />
                 </div>
-                <h4 className="font-medium text-gray-900 mb-3 text-base sm:text-lg">Vaidya LIMS</h4>
+                <h4 className="font-medium text-gray-900 mb-3 text-base sm:text-lg">VaidyaLab</h4>
                 <p className="text-gray-600 text-sm sm:text-base">Streamlined diagnostics and automated reporting</p>
               </div>
 

@@ -79,7 +79,7 @@ export default function HeroSection() {
               <div className="w-full h-full border border-gray-100 rounded-xl overflow-hidden relative">
                 <Image 
                   src="/LIMS.png" 
-                  alt="Vaidya LIMS Interface" 
+                  alt="VaidyaLab Interface" 
                   fill
                   sizes="960px"
                   className="object-cover object-top"
@@ -119,13 +119,13 @@ export default function HeroSection() {
                   <div className="w-full h-48 border border-gray-100 rounded-xl bg-gray-50 flex items-center justify-center mb-4 relative overflow-hidden">
                     <Image 
                       src="/LIMS.png" 
-                      alt="Vaidya LIMS" 
+                      alt="VaidyaLab" 
                       fill
                       sizes="80vw"
                       className="object-cover object-top"
                     />
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-1">Vaidya LIMS Dashboard</h3>
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">VaidyaLab Dashboard</h3>
                   <p className="text-sm text-gray-600 leading-normal">AI-native operating system for diagnostics. Full analytical insights and workflows.</p>
                 </div>
               </div>

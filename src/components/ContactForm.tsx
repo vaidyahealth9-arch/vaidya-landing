@@ -56,8 +56,11 @@ export default function ContactForm() {
            <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-gray-900 mb-4 sm:mb-6">
              Get Started Today
            </h2>
-           <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto px-4">
+           <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto px-4 mb-4">
              Ready to transform your healthcare operations? Let&apos;s discuss how our platform can help you.
+           </p>
+           <p className="text-base text-gray-500">
+             Or reach us directly at <a href="mailto:info@vaidyahealth.com" className="text-green-600 hover:text-green-700 hover:underline font-medium">info@vaidyahealth.com</a> or <a href="tel:+918801933093" className="text-green-600 hover:text-green-700 hover:underline font-medium">+91 88019 33093</a>
            </p>
          </div>
 
@@ -155,7 +158,7 @@ export default function ContactForm() {
             {submitStatus === 'error' && (
               <div className="bg-red-50 border border-red-200 rounded-lg p-4">
                 <p className="text-red-800 text-sm">
-                  Something went wrong. Please try again or contact us directly.
+                  Something went wrong. Please try again, email us at <a href="mailto:info@vaidyahealth.com" className="underline font-medium">info@vaidyahealth.com</a>, or call us at <a href="tel:+918801933093" className="underline font-medium">+91 88019 33093</a>.
                 </p>
               </div>
             )}

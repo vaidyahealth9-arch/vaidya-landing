@@ -7,7 +7,7 @@ export default function ProductsSection() {
     {
       id: "lims",
       badge: "Diagnostics",
-      title: "Vaidya LIMS",
+      title: "VaidyaLab",
       subtitle: "AI-native operating system for diagnostic laboratories",
       desc: "Replaces traditional static reports with a dynamic clinical system. Equips labs with automated biomarker extraction, instant pathology warnings, and longitudinal trend lines.",
       features: [

@@ -31,10 +31,18 @@ export default function Footer() {
             <div className="w-20 h-1 bg-gradient-to-r from-green-400 to-green-600 rounded-full mb-6"></div>
             
             {/* Contact info inline */}
-            <div className="flex items-center space-x-6">
+            <div className="flex flex-col sm:flex-row sm:items-center space-y-3 sm:space-y-0 sm:space-x-6">
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                <span className="text-gray-700 font-medium">info@vaidyahealth.com</span>
+                <a href="mailto:info@vaidyahealth.com" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
+                  info@vaidyahealth.com
+                </a>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                <a href="tel:+918801933093" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
+                  +91 88019 33093
+                </a>
               </div>
             </div>
           </div>

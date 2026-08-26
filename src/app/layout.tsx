@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Vaidya Health | The Intelligence Layer for Healthcare",
-  description: "Vaidya Health builds the intelligence layer for healthcare. AI-powered infrastructure that transforms healthcare data into actionable intelligence. Featuring AI-native LIMS, lifelong AI health companions (PHR), clinical AI decision workspaces (VaidyaMD), and ABDM/ABHA, FHIR, & HL7 interoperability standards.",
+  description: "Vaidya Health builds the intelligence layer for healthcare. AI-powered infrastructure that transforms healthcare data into actionable intelligence. Featuring AI-native VaidyaLab, lifelong AI health companions (PHR), clinical AI decision workspaces (VaidyaMD), and ABDM/ABHA, FHIR, & HL7 interoperability standards.",
   icons: {
     icon: [
       { url: '/logo.png', type: 'image/png', sizes: '16x16' },
