@@ -88,7 +88,7 @@ export default function TrustAndInteroperabilitySection() {
         </div>
 
         {/* Responsible AI / Trust Sub-Section */}
-        <div id="about" className="scroll-mt-24 border-t border-gray-200/60 pt-24">
+        <div id="trust-framework" className="scroll-mt-24 border-t border-gray-200/60 pt-24">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="inline-flex items-center px-4 py-1.5 mb-4 bg-emerald-50 border border-emerald-200/40 rounded-full">
               <span className="text-xs font-semibold text-emerald-700 tracking-wider uppercase">Trust Framework</span>

@@ -5,6 +5,7 @@ import AIDemoSection from '@/components/AIDemoSection'
 import ProductsSection from '@/components/ProductsSection'
 import TrustAndInteroperabilitySection from '@/components/TrustAndInteroperabilitySection'
 import IndiaFocusSection from '@/components/IndiaFocusSection'
+import LeadershipSection from '@/components/LeadershipSection'
 import ContactForm from '@/components/ContactForm'
 import Footer from '@/components/Footer'
 
@@ -32,6 +33,10 @@ export default function Home() {
       <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
       
       <IndiaFocusSection />
+      
+      <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
+      
+      <LeadershipSection />
       
       <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
       

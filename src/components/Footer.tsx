@@ -79,7 +79,7 @@ export default function Footer() {
               <li>
                 <Link href="#about" className="text-gray-600 hover:text-green-600 transition-all duration-300 font-medium group flex items-center">
                   <span className="w-1.5 h-1.5 bg-green-400 rounded-full mr-2.5 group-hover:scale-150 transition-transform"></span>
-                  About & Trust
+                  About & Leadership
                 </Link>
               </li>
             </ul>
