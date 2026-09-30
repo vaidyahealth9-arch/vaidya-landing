@@ -1,4 +1,4 @@
-name: Deploy to Cloud Run
+name: Deploy to Cloud Run & Firebase Hosting
 
 on:
   push:
@@ -45,3 +45,6 @@ jobs:
           flags: '--allow-unauthenticated --port=3000'
           env_vars: |-
             RESEND_API_KEY=${{ secrets.RESEND_API_KEY }}
+
+      - name: Deploy Firebase Hosting
+        run: npx -y firebase-tools@latest deploy --only hosting --project=${{ env.PROJECT_ID }} --token=${{ secrets.FIREBASE_TOKEN }}
