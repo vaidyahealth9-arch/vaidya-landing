@@ -57,7 +57,7 @@ export default function ProductsSection() {
       badge: "Clinicians",
       title: "VaidyaMD",
       subtitle: "AI-powered clinical workspace",
-      isWip: true,
+
       desc: "Intelligent medical workspace providing clinicians with consultation copilots, automated note generation, and context-aware clinical decision checklists.",
       features: [
         {
@@ -112,11 +112,6 @@ export default function ProductsSection() {
                     {product.badge}
                   </span>
                   
-                  {product.isWip && (
-                    <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-orange-100 text-orange-800 border border-orange-200 animate-pulse">
-                      Work In Progress (WIP)
-                    </span>
-                  )}
                 </div>
 
                 <div>
@@ -134,13 +129,7 @@ export default function ProductsSection() {
                 <div className={`border border-gray-200 rounded-2xl p-6 ${product.iconBg} relative overflow-hidden shadow-sm`}>
                   <div className="flex items-center space-x-4 mb-4">
                     <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm">
-                      {product.id === 'vaidyamd' ? (
-                        <svg className="w-7.5 h-7.5 text-indigo-600" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M12 2a7 7 0 00-7 7v3a5 5 0 002 4v2H5a1 1 0 000 2h14a1 1 0 000-2h-2v-2a5 5 0 002-4V9a7 7 0 00-7-7zm-5 10V9a5 5 0 1110 0v3a3 3 0 01-3 3h-4a3 3 0 01-3-3zm3 5h4v2h-4v-2z"/>
-                        </svg>
-                      ) : (
-                        <Image src="/logo.png" alt={product.title} width={36} height={36} />
-                      )}
+                      <Image src={product.id === 'vaidyamd' ? '/VaidyaMd.png' : '/logo.png'} alt={product.title} width={36} height={36} className="rounded-lg object-contain" />
                     </div>
                     <div>
                       <div className="font-bold text-gray-900 text-sm">{product.title}</div>
